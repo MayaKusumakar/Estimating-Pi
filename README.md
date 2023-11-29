@@ -1,36 +1,33 @@
 # Estimating-Pi
 ## Problem
-For this problem you will be implementing a Monte Carlo method for estimating of pi. Imagine that you have a circle of radius 1 whose center is at (0,0) surrounded by a square with sides of length 2 
+For this program, the Monte Carlo method is utilized for estimating pi. 
 
-If we randomly choose points within the square the probability of a point being inside the circle is proportional to the area of the square that it occupies.
+The program randomly chooses points within the square and the probability of a point being inside the circle is proportional to the area of the square that it occupies.
 
-Pi can be approximated by picking a large number of points between [-1, 1] and counting the number that are inside the circle. The number of points inside the circle divided by the total number of points generated is the probability of being inside the circle
+Pi is approximated by picking a large number of points between [-1, 1] and counting the numbers that are inside the circle. 
+
+The number of points inside the circle divided by the total number of points generated is the probability of being inside the circle
 
 
 ## Assumptions
 Input will always be valid.
 
 ## Valid Input
-Seed: an integer
-Number of iterations: an integer greater than 0
-Randomness
-In order to match my outputs you will need to make calls to random functions in the exact order that I do
+  - Seed: an integer
+  - Number of iterations: an integer greater than 0
 
-Make sure to seed the random number generator using srand with the user provided seed
-Make sure you only call srand once in your entire program
-Make sure you call it before any other calls to any other random function
+Randomness:
 
+- Seed the random number generator using srand with the user provided seed
+- srand is called once in your entire program
 
-1. First generate a random number between [-1, 1] for the x-axis
-2. Then generate a random number between [-1, 1] for the y-axis
-
-Make sure you generate new x,y coordinates for every point you pick instead of reusing one point over and over.
-Numbers that fall exactly on the edge of the circle are considered to be inside the circle
 ## Requirements
-Print all floats to 2 decimal points unless stated otherwise
-You must use have at least three functions in your program
-Restrictions
+  - Print all floats to 2 decimal points unless stated otherwise
+  - Must have at least three functions in your program
+
+## Restrictions
 No global variables may be used
+
 # Examples
 
 ## Example 1
